@@ -1,0 +1,96 @@
+body{
+font-family:'Poppins',sans-serif;
+background:#f8fafc;
+margin:0;
+}
+
+/* HEADER */
+header{
+display:flex;
+justify-content:space-between;
+align-items:center;
+padding:15px 40px;
+margin:20px;
+background:white;
+border-radius:20px;
+box-shadow:0 5px 25px rgba(0,0,0,0.05);
+}
+
+.logo{
+font-weight:600;
+color:#6366f1;
+}
+
+nav ul{
+display:flex;
+gap:25px;
+list-style:none;
+}
+
+nav a{
+text-decoration:none;
+color:#0f172a;
+font-weight:500;
+}
+
+nav a:hover{
+color:#6366f1;
+}
+
+/* TITLE */
+.title{
+text-align:center;
+margin-top:40px;
+}
+
+.title h1{
+font-size:32px;
+margin-bottom:5px;
+}
+
+.title p{
+color:#64748b;
+}
+
+/* GRID */
+.foto{
+padding:40px;
+}
+
+.certificate-grid{
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+gap:25px;
+max-width:1000px;
+margin:auto;
+}
+
+/* CARD */
+.certificate-item{
+background:white;
+padding:15px;
+border-radius:18px;
+box-shadow:0 8px 25px rgba(0,0,0,0.05);
+transition:.3s;
+text-align:center;
+}
+
+.certificate-item:hover{
+transform:translateY(-8px) scale(1.02);
+}
+
+.certificate-item img{
+width:100%;
+border-radius:12px;
+margin-bottom:10px;
+}
+
+/* FOOTER */
+.footer{
+margin:20px;
+padding:15px;
+text-align:center;
+background:white;
+border-radius:20px;
+box-shadow:0 5px 20px rgba(0,0,0,0.05);
+}

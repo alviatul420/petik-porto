@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>personalweb</title>
+</head>
+
+<body>
+
+    <header class="header">
+        <p class="logo">AlviaAa</p>
+
+        <nav>
+            <ul>
+
+                <li><a href="#Home">Home</a></li>
+
+                <li><a href="portofolio.html">Portofolio</a></li>
+
+                <li><a href="skill.html">Skill</a></li>
+
+                <li class="dropdown">
+                    <a href="#" onclick="toggleDropdown()">Tugas</a>
+
+                    <div class="dropdown-content">
+                        <a href="article.html">PIPAS</a>
+                        <a href="sunda.html">B.Sunda</a>
+                        <a href="sejarah.html">Sejarah</a>
+                    </div>
+
+                </li>
+
+            </ul>
+        </nav>
+    </header>
+
+
+    <main>
+
+        <section id="Home" class="about">
+
+            <div class="about-text">
+
+                <h2 class="typing">I'M ALVIATUL <span>HASANAH</span></h2>
+
+                <p class="tagline">Student | Future Entrepreneur | Tech Enthusiast</p>
+
+                <p>
+                    Hi, saya Alviatul Hasanah, siswa SMK Wikrama Bogor yang tertarik pada bisnis dan teknologi.
+                    Saya disiplin, bertanggung jawab, dan terus mengembangkan skill untuk menjadi pengusaha sukses.
+                </p>
+
+                <h4>Follow me:</h4>
+
+                <div class="social-icons">
+                    <a href="https://www.instagram.com/allwh1tee_" target="_blank">
+                        <img src="images/black-instagram-icon.png">
+                    </a>
+                </div>
+
+            </div>
+
+
+            <div class="about-image">
+                <img src="images/fto.jpeg" class="images">
+            </div>
+
+        </section>
+
+
+
+        <section id="Pendidikan" class="section-projects">
+
+            <h2>Education</h2>
+
+            <div class="Pendidikan-cards">
+
+                <div class="Pendidikan-card">
+                    <img src="images.jpg">
+                    <p>2015 - 2021<br>MI AN-NABA 01</p>
+                </div>
+
+
+                <div class="Pendidikan-card">
+                    <img src="images/Gambar WhatsApp 2024-12-23 pukul 11.36.07_b466a25e.jpg">
+                    <p>2021 - 2024<br>MTS AL-ISTIQOMAH</p>
+                </div>
+
+
+                <div class="Pendidikan-card">
+                    <img src="images/Screenshot 2024-12-12 151023.png">
+                    <p>2024 - 2027<br>SMK WIKRAMA BOGOR</p>
+                </div>
+
+            </div>
+
+        </section>
+
+
+
+        <section class="contact">
+
+            <h2>Contact</h2>
+
+            <form>
+
+                <input type="text" placeholder="Nama">
+
+                <input type="email" placeholder="Email">
+
+                <textarea placeholder="Pesan"></textarea>
+
+                <button>Kirim</button>
+
+            </form>
+
+        </section>
+
+    </main>
+    
+    <footer class="footer">
+        <p>© 2024 Alviatul Hasanah</p>
+    </footer>
+
+    <script>
+        function toggleDropdown() {
+            var dropdownContent = document.querySelector('.dropdown-content');
+            dropdownContent.style.display =
+                dropdownContent.style.display === 'block'
+                    ? 'none'
+                    : 'block';
+        }
+
+    </script>
+
+</body>
+
+</html>

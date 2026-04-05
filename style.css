@@ -1,0 +1,300 @@
+/* RESET */
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+scroll-behavior:smooth;
+}
+
+/* BODY */
+body{
+font-family:'Poppins',sans-serif;
+background:#f8fafc;
+color:#0f172a;
+line-height:1.6;
+}
+
+/* HEADER */
+header{
+display:flex;
+justify-content:space-between;
+align-items:center;
+padding:15px 40px;
+margin:20px;
+background:white;
+border-radius:20px;
+box-shadow:0 5px 25px rgba(0,0,0,0.05);
+}
+
+/* LOGO */
+.logo{
+font-size:22px;
+font-weight:700;
+color:#6366f1;
+letter-spacing:1px;
+}
+
+/* NAV */
+nav ul{
+display:flex;
+gap:30px;
+list-style:none;
+}
+
+nav a{
+text-decoration:none;
+color:#334155;
+font-weight:500;
+position:relative;
+transition:.3s;
+}
+
+/* garis hover */
+nav a::after{
+content:"";
+position:absolute;
+bottom:-5px;
+left:0;
+width:0;
+height:2px;
+background:#6366f1;
+transition:.3s;
+}
+
+nav a:hover::after{
+width:100%;
+}
+
+/* DROPDOWN */
+.dropdown{
+position:relative;
+}
+
+.dropdown-content{
+display:none;
+position:absolute;
+background:white;
+border-radius:12px;
+box-shadow:0 10px 25px rgba(0,0,0,0.08);
+overflow:hidden;
+}
+
+.dropdown-content a{
+display:block;
+padding:12px 15px;
+}
+
+.dropdown-content a:hover{
+background:#f1f5f9;
+}
+
+/* HERO */
+.about{
+display:flex;
+align-items:center;
+justify-content:space-between;
+gap:50px;
+padding:70px;
+margin:20px;
+background:linear-gradient(135deg,#eef2ff,#ffffff);
+border-radius:25px;
+box-shadow:0 10px 30px rgba(0,0,0,0.05);
+animation:fadeUp 1s ease;
+}
+
+.about-text{
+max-width:500px;
+}
+
+/* NAMA */
+.typing{
+font-size:40px;
+font-weight:700;
+margin-bottom:20px;
+letter-spacing:1px;
+}
+
+/* warna nama belakang */
+span{
+color:#6366f1;
+}
+
+/* DESKRIPSI */
+.about p{
+font-size:16px;
+color:#475569;
+margin-top:15px;
+}
+
+/* FOTO */
+.images{
+width:270px;
+height:270px;
+border-radius:50%;
+object-fit:cover;
+border:6px solid white;
+box-shadow:0 15px 40px rgba(0,0,0,0.15);
+}
+
+/* ICON SOSMED */
+.social-icons{
+margin-top:20px;
+}
+
+.social-icons img{
+width:35px;
+margin-right:12px;
+transition:.3s;
+}
+
+.social-icons img:hover{
+transform:scale(1.15);
+}
+
+/* SECTION TITLE */
+h2{
+font-size:28px;
+margin-bottom:15px;
+position:relative;
+}
+
+h2::after{
+content:"";
+width:70px;
+height:4px;
+background:#6366f1;
+display:block;
+margin:8px auto;
+border-radius:10px;
+}
+
+/* SECTION */
+.section-projects{
+padding:70px 20px;
+text-align:center;
+}
+
+/* EDUCATION */
+.Pendidikan-cards{
+display:flex;
+justify-content:center;
+gap:25px;
+flex-wrap:wrap;
+margin-top:30px;
+}
+
+.Pendidikan-card{
+width:260px;
+background:white;
+padding:20px;
+border-radius:18px;
+border:1px solid #e5e7eb;
+box-shadow:0 5px 20px rgba(0,0,0,0.05);
+transition:.3s;
+animation:fadeUp 1s ease;
+}
+
+.Pendidikan-card:hover{
+transform:translateY(-10px);
+}
+
+.Pendidikan-card img{
+width:100%;
+border-radius:12px;
+margin-bottom:15px;
+}
+
+/* CONTACT */
+.contact{
+padding:70px 20px;
+text-align:center;
+}
+
+.contact form{
+max-width:420px;
+margin:auto;
+display:flex;
+flex-direction:column;
+gap:15px;
+}
+
+.contact input,
+.contact textarea{
+padding:13px;
+border-radius:12px;
+border:1px solid #e2e8f0;
+font-size:14px;
+}
+
+.contact textarea{
+min-height:120px;
+}
+
+.contact button{
+background:#6366f1;
+color:white;
+border:none;
+padding:13px;
+border-radius:12px;
+font-size:15px;
+cursor:pointer;
+transition:.3s;
+}
+
+.contact button:hover{
+background:#4f46e5;
+}
+
+/* FOOTER */
+.footer{
+margin:20px;
+padding:25px;
+text-align:center;
+background:white;
+border-radius:20px;
+font-size:14px;
+box-shadow:0 5px 20px rgba(0,0,0,0.05);
+}
+
+/* ANIMASI */
+@keyframes fadeUp{
+from{
+opacity:0;
+transform:translateY(25px);
+}
+to{
+opacity:1;
+transform:translateY(0);
+}
+}
+
+/* RESPONSIVE */
+@media(max-width:900px){
+.about{
+flex-direction:column;
+text-align:center;
+}
+
+header{
+flex-direction:column;
+gap:10px;
+}
+
+nav ul{
+flex-wrap:wrap;
+justify-content:center;
+}
+
+.images{
+margin-top:20px;
+}
+}
+
+/* TAGLINE */
+.tagline{
+font-size:15px;
+color:#6366f1;
+margin-bottom:10px;
+font-weight:500;
+letter-spacing:1px;
+}
